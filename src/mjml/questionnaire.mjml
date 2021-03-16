@@ -1,0 +1,63 @@
+<mjml>
+  <mj-head>
+    <mj-preview
+      >We are evaluating options for our summer camps. To help us plan we are
+      asking you to fill out this small questionnaire by March 1,
+      2021.</mj-preview
+    >
+    <mj-style inline="inline">
+      .main-content p { margin: 0px 0px; padding: 0px 0px 20px; font-family:
+      sans-serif; font-size: 15px; color: #4B5563; line-height: 1.65; }
+      .main-content a { color: #DC2626; } .main-content p span {
+      text-decoration: underline; } .footer p { color: #9CA3AF; } .footer p a {
+      color: #9CA3AF; }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text css-class="main-content">
+          <p>Hello Basketball Officials,</p>
+
+          <p>
+            With the current 20/21 season soon coming to a close we are
+            evaluating options for our 2-person and 3-person summer camps (held
+            in Kaukauna and Plymouth WI). With many officials having worked
+            games thru the pandemic this season we would like to keep the
+            momentum going and give those that are interested the opportunity
+            for education, training, and camp certification this summer.
+          </p>
+
+          <p>
+            To help us properly plan we are asking you to
+            <a href="https://wbyoc-pre-camp-questionnaire.vercel.app"
+              >fill out this short questionnaire</a
+            >
+            by March 1, 2021.
+          </p>
+
+          <p>Have a great day,</p>
+          <p>- The WBYOC Staff</p>
+          <p>
+            <a href="https://wbyoc-pre-camp-questionnaire.vercel.app/"
+              >Link to the questionnaire</a
+            >
+          </p>
+        </mj-text>
+        <mj-divider border-width="2px" border-color="#E5E7EB"></mj-divider>
+        <mj-text
+          css-class="footer"
+          padding-top="0px"
+          font-size="14px"
+          font-family="sans-serif"
+          line-height="1.65"
+        >
+          <p>
+            <a href="%unsubscribe_url%">Unsubscribe</a> from our emails. &copy;
+            Officials Connection 2021
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

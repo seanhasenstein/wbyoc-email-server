@@ -1,0 +1,10 @@
+# Compiled JavaScript files
+**/*.js
+**/*.js.map
+dist/
+
+# Node.js dependency directory
+node_modules/
+
+# Environment variables
+.env
