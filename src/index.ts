@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as FormData from 'form-data';
-import { template } from './templates/main';
+import htmlEmail from './templates/marketing/hs-3-17-21';
 
 dotenv.config();
 
@@ -20,8 +20,9 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
   const endpoint = `https://api.mailgun.net/v3/${process.env.MAILGUN_DOMAIN}/messages`;
 
-  form.append('from', `WBYOC <${mailingList}>`);
+  form.append('from', `WBYOC <wbyoc@officialsconnection.org>`);
   form.append('to', mailingList);
+  form.append('bcc', 'wbyoc@officialsconnection.org');
   form.append('subject', subject);
   form.append('html', html);
 
@@ -42,10 +43,11 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
   }
 };
 
+// MAKE SURE TO COMPILE TYPESCRIPT FIRST!
 sendEmail({
-  subject: 'Testing out templating with MJML 2',
+  subject: `***TESTING*** 2021 Camp Registration Now Open`,
   mailingList: 'seanhasenstein@gmail.com',
-  html: template,
+  html: htmlEmail,
 });
 
 // 1. get template file (mjml)
