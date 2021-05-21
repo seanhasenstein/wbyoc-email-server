@@ -1,9 +1,10 @@
+export default `
 <!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Camps are filling up. Reserve your spot ASAP!</title>
+    <title>2021 Camp Registration Now Open!</title>
     <style>
       /* -------------------------------------
           GLOBAL RESETS
@@ -359,9 +360,7 @@
     </style>
   </head>
   <body class="">
-    <span class="preheader"
-      >3 spots left for the Fri High School Session at Kaukauna!</span
-    >
+    <span class="preheader">2021 camp registration is now available!</span>
     <table
       role="presentation"
       border="0"
@@ -386,62 +385,48 @@
                   >
                     <tr>
                       <td>
-                        <p>Basketball Officials,</p>
+                        <p>Hello Basketball Officials,</p>
 
                         <p>
-                          We’re 1 month out from our Kaukauna camp (June
-                          18th,19th, and 20th)!
+                          Just sending you a quick message to tell you that
+                          registration is now open for our 2021 summer camps.
+                        </p>
+
+                        <p>Kaukauna camp dates: June 18th, 19th, and 20th.</p>
+
+                        <p>Plymouth camp dates: July 9th, 10th, and 11th.</p>
+
+                        <p>
+                          Both camps include high school, men’s college, and
+                          women’s college sessions.
                         </p>
 
                         <p>
-                          There are currently only 3 spots left for the Friday
-                          High School session on June 18th. Anyone planning on
-                          attending this session should register asap.
+                          The college camps will be co-directed by Don Baumgart
+                          and Mark Woelfel and will include College D1
+                          clinicians.
                         </p>
 
                         <p>
-                          We also have a few more spots remaining on the
-                          Saturday, June 19th sessions and Sunday, June 20th
-                          session.
+                          Don’t miss out on this great opportunity for training
+                          and education. Sessions will fill up fast so be sure
+                          to reserve your spot ASAP.
                         </p>
 
                         <p>
-                          Just a reminder that our camps provide 2 and 3 person
-                          training and education. Now more than ever, we need
-                          new younger officials from your associations to get
-                          the training and confidence to move forward in their
-                          basketball officiating careers. Our camp provides this
-                          training at all levels (new officials to veterans).
-                        </p>
-
-                        <p>
-                          For more information and registration go to our
-                          website at
+                          For more information and online registration go to
                           <a href="https://officialsconnection.org/"
                             >www.officialsconnection.org</a
                           >.
                         </p>
 
-                        <p>
-                          We also have this year’s camp staff and game assignors
-                          who will in attendance listed on our website.
-                          Conference commissioners will also be listed as they
-                          get back to me whether or not they will be attending.
-                        </p>
+                        <p>Please let me know if you have any questions.</p>
 
-                        <p>Hope to see you at camp this summer!</p>
+                        <p>We hope to see you this summer!</p>
 
                         <p class="mb0 bold">Tom Rusch</p>
-                        <p class="mt0 mb0">
-                          Wisconsin Yearbook Officials Camp Director
-                        </p>
-                        <p class="mt0 mb0">
-                          Coordinator of Basketball Officials
-                        </p>
-                        <p class="mt0 mb0">Wisconsin Collegiate Conference</p>
-                        <p class="mt0 mb0">Lakeshore Officials Association</p>
+                        <p class="mt0 mb0">WBYOC Director</p>
                         <p class="mt0 mb0">(920) 698-2400</p>
-                        <p class="mt0 mb0">rusch@lutheranhigh.com</p>
                       </td>
                     </tr>
                   </table>
@@ -485,3 +470,4 @@
     </table>
   </body>
 </html>
+`;

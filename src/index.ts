@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as FormData from 'form-data';
-import htmlEmail from './templates/marketing/hs-3-17-21';
+import htmlEmail from './templates/marketing/hs-5-20-21';
 
 dotenv.config();
 
@@ -45,7 +45,7 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
 // MAKE SURE TO COMPILE TYPESCRIPT FIRST!
 sendEmail({
-  subject: `***TESTING*** 2021 Camp Registration Now Open`,
+  subject: `*** TESTING *** ${new Date()}`,
   mailingList: 'seanhasenstein@gmail.com',
   html: htmlEmail,
 });
