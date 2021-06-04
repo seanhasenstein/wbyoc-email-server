@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as FormData from 'form-data';
-import htmlEmail from './templates/marketing/hs-5-20-21';
+import htmlEmail from './templates/marketing/hs-6-3-21';
 
 dotenv.config();
 
@@ -22,7 +22,7 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
   form.append('from', `WBYOC <wbyoc@officialsconnection.org>`);
   form.append('to', mailingList);
-  form.append('bcc', 'wbyoc@officialsconnection.org');
+  form.append('bcc', 'rusch@lutheranhigh.com');
   form.append('subject', subject);
   form.append('html', html);
 
@@ -45,8 +45,8 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
 // MAKE SURE TO COMPILE TYPESCRIPT FIRST!
 sendEmail({
-  subject: `*** TESTING *** ${new Date()}`,
-  mailingList: 'seanhasenstein@gmail.com',
+  subject: `Kaukauna camp spots available June 19 and June 20`,
+  mailingList: '2021-hs-marketing-list@mg.officialsconnection.org',
   html: htmlEmail,
 });
 
