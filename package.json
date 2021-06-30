@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "watch": "tsc --watch",
-    "send": "node ./dist/index.js"
+    "send:marketing": "node ./dist/index.js",
+    "send:video": "node ./dist/video.js",
+    "send:questionnaire": "node ./dist/questionnaire.js"
   },
   "keywords": [],
   "author": "",

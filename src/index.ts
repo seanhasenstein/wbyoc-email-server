@@ -22,7 +22,7 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
   form.append('from', `WBYOC <wbyoc@officialsconnection.org>`);
   form.append('to', mailingList);
-  form.append('bcc', 'rusch@lutheranhigh.com');
+  form.append('bcc', 'seanhasenstein@gmail.com');
   form.append('subject', subject);
   form.append('html', html);
 
@@ -45,8 +45,8 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
 // MAKE SURE TO COMPILE TYPESCRIPT FIRST!
 sendEmail({
-  subject: `Kaukauna camp spots available June 19 and June 20`,
-  mailingList: '2021-hs-marketing-list@mg.officialsconnection.org',
+  subject: `*** TESTING [${Date.now()}] ***`,
+  mailingList: 'wbyoc@officialsconnection.org',
   html: htmlEmail,
 });
 
