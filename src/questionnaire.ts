@@ -58,7 +58,7 @@ function generateHtml(firstName: string) {
   return `<!DOCTYPE html>
   <html lang="en">
     <head>
-      <title>2021 WBYOC Kaukauna Camp Questionnaire</title>
+      <title>2021 WBYOC Plymouth Camp Questionnaire</title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -134,12 +134,12 @@ function generateHtml(firstName: string) {
               </tr>
               <tr>
                 <td style="padding: 9px 0; font-family: 'Arial', 'Helvetica', sans-serif;">
-                  Thanks again for attending the 2021 Kaukauna Camp. We would appreciate it if you would fill out this short questionnaire based on your camp experience.
+                  Thanks again for attending the 2021 Plymouth Camp. We would appreciate it if you would fill out this short questionnaire based on your camp experience.
                 </td>
               </tr>
               <tr>
                 <td style="padding: 9px 0; font-family: 'Arial', 'Helvetica', sans-serif;">
-                  <a href="https://officialsconnection.org/post-camp-questionnaire?camp=kaukauna">Questionnaire Link</a>
+                  <a href="https://officialsconnection.org/post-camp-questionnaire?camp=plymouth">Questionnaire Link</a>
                 </td>
               </tr>
               <tr>
@@ -164,7 +164,7 @@ function generateHtml(firstName: string) {
 function sendEmail(campers: Camper[]) {
   campers.forEach(c => {
     sendQuestionnaireEmail({
-      subject: `2021 Kaukauna Camp Questionnaire ***TEST [${Date.now()}]***`,
+      subject: `2021 Plymouth Camp Questionnaire`,
       to: c.email,
       html: generateHtml(c.firstName),
     });
