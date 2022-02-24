@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as FormData from 'form-data';
-import htmlEmail from './templates/marketing/hs-6-30-21';
+import htmlEmail from './templates/marketing/archive/2022/hs-2-24-22';
 
 dotenv.config();
 
@@ -45,15 +45,7 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
 
 // MAKE SURE TO COMPILE TYPESCRIPT FIRST!
 sendEmail({
-  subject: `***TEST [${Date.now()}]***`,
+  subject: `**** TEST ${new Date()} ****`,
   mailingList: 'seanhasenstein@gmail.com',
   html: htmlEmail,
 });
-
-// 1. get template file (mjml)
-// 2. create new instance of showdown.Converter()
-// 3. read the MD file and put into variable
-// 4. use converter.makeHtml to convert markdown into html
-// 5. read the mjml template file
-// 6. replace {{content}} in template file with converted MD
-// 7. use mjml2Html to convert mjml (with converted MD) into html
