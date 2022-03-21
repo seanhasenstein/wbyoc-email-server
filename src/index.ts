@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import * as FormData from 'form-data';
-import htmlEmail from './templates/marketing/archive/2022/hs-2-24-22';
+import htmlEmail from './templates/marketing/archive/2022/hs-3-20-22';
 
 dotenv.config();
 
@@ -43,9 +43,9 @@ const sendEmail = async ({ subject, mailingList, html }: SendEmailArgs) => {
   }
 };
 
-// MAKE SURE TO COMPILE TYPESCRIPT FIRST!
+// MAKE SURE TO COMPILE TYPESCRIPT BEFORE SENDING!
 sendEmail({
-  subject: `**** TEST ${new Date()} ****`,
+  subject: `*** test email ${new Date().toISOString()} ***`,
   mailingList: 'seanhasenstein@gmail.com',
   html: htmlEmail,
 });
